@@ -33,35 +33,27 @@
             // 
             // listBox1
             // 
+            this.listBox1.AllowDrop = true;
             this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
-            this.listBox1.Items.AddRange(new object[] {
-            "음",
-            "악",
-            "읻ㅂ",
-            "ㄴㅁㄴㅇ",
-            "ㅁㄴㅇ",
-            "ㅁㄴ",
-            "ㅊㅌㅋ",
-            "ㅌㅊ",
-            "ㅂㅁㅈㄷ",
-            "ㅁㄴㅇ"});
-            this.listBox1.Location = new System.Drawing.Point(6, 11);
+            this.listBox1.Location = new System.Drawing.Point(0, -1);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(268, 317);
+            this.listBox1.Size = new System.Drawing.Size(250, 302);
             this.listBox1.TabIndex = 0;
+            this.listBox1.DragDrop += new System.Windows.Forms.DragEventHandler(this.listBox1_DragDrop);
+            this.listBox1.DragEnter += new System.Windows.Forms.DragEventHandler(this.listBox1_DragEnter);
             // 
             // Form_MusicList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(278, 326);
+            this.ClientSize = new System.Drawing.Size(250, 300);
             this.ControlBox = false;
             this.Controls.Add(this.listBox1);
             this.DoubleBuffered = false;
             this.Movable = false;
             this.Name = "Form_MusicList";
+            this.ShadowType = MetroFramework.Forms.MetroFormShadowType.None;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.ResumeLayout(false);
