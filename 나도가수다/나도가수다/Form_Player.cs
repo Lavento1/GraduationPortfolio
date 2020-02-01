@@ -23,9 +23,9 @@ namespace 나도가수다
 
         public void Form_Init()
         {
-            this.Size = new Size(250, 250);
-            fMusicList.Size = new Size(250, 300);
-            fBrowser.Size = new Size(300, 300);
+            //this.Size = new Size(250, 250);
+            //fMusicList.Size = new Size(250, 300);
+            //fBrowser.Size = new Size(300, 300);
             
             this.Location = new Point(150, 150);     
             fMusicList.Location = new Point(this.Location.X, this.Location.Y + this.Height);
